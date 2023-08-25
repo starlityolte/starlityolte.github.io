@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/img/icon.png">
+    <title>SagitaryStarS profile</title>
+</head>
+
+<body>
+    <!-- navbar menu -->
+    <div class="navbar-container">
+        <div class="logo">
+            <img src="assets/img/sagitary-cst.jpg" alt="logo" class="logo-img">
+            <h1 class="logo-title">SagiXGit</h1>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-ul">
+                <li class="nav-li"><a href="#" class="nav-a">Home</a></li>
+                <li class="nav-li"><a href="#about" class="nav-a">About Me</a></li>
+                <li class="nav-li"><a href="#contact" class="nav-a">Contact Me</a></li>
+                <li class="nav-li"><a onclick="darkMode()" id="mode" class="nav-a">Mode</a></li>
+            </ul>
+        </nav>
+        <button class="btn-cta" onclick="redirIg()">Follow Me</button>
+    </div>
+    <!-- navbar done -->
+
+    <!-- content -->
+    <div class="content-container">
+        <div class="intro">
+            <p class="intro-title">Hi,Sagitary is here for you and everyone!</p>
+            <p class="intro-desc">Im is Little simple Web programer from Indonesia</p>
+            <img src="assets/img/1.jpg" alt="foto" class="intro-img">
+        </div>
+
+        <!-- about -->
+        <div class="parallax">
+            <div class="about" id="about">
+                <p class="intro-title">My real name is Yoel Desamin and my age is 12</p>
+                <p class="intro-desc">I like to make a simple html,css,and javascript</p>
+                <button class="btn-cta margin-t10"><a href="about.html" class="nav-a">Other About Me</a></button>
+            </div>
+
+            <!-- contact -->
+            <div class="contact" id="contact">
+                <div class="card">
+                    <div class="card-item">
+                        <img src="assets/img/Ig-logo.png" class="card-img">
+                        <p class="card-title">My Instagram</p>
+                        <p class="card-description">Follow My Instagram</p>
+                        <button class="btn-cta margin-t10" onclick="redirIg()">Visit</button>
+                    </div>
+                    <div class="card-item">
+                        <img src="assets/img/Wa-logo.png" class="card-img">
+                        <p class="card-title">My Whatsapp</p>
+                        <p class="card-description">Send Massage to me</p>
+                        <button class="btn-cta margin-t10" onclick="redirWa()">Chat</button>
+                    </div>
+                    <div class="card-item">
+                        <img src="assets/img/discord-logo.png" class="card-img">
+                        <p class="card-title">My Discord</p>
+                        <p class="card-description">Send Massage to me</p>
+                        <button class="btn-cta margin-t10" onclick="redirDc()">Visit</button>
+                    </div>
+                    <div class="card-item">
+                        <img src="assets/img/Fb-logo.png" class="card-img">
+                        <p class="card-title">My Facebook</p>
+                        <p class="card-description">I like make some friends!</p>
+                        <button class="btn-cta margin-t10" onclick="redirFb()">Visit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <p class="intro-title">&copy;SagitaryStarS Github 2023</p>
+    </footer>
+
+
+    <!-- js -->
+    <script>
+         function redirIg() {
+            window.location.href = "https://instagram.com/yoel.desamin?igshid=NTc4MTIwNjQ2YQ=="
+         }
+         function redirWa() {
+            window.location.href = "https://wa.me//+6285163725418"
+        }
+        function redirDc() {
+            window.location.href = "https://discord.com/users/898158406278479932"
+        }
+        function redirFb() {
+            window.location.href = "https://www.facebook.com/starli.creators?mibextid=ZbWKwL"
+        }
+
+        // dark mode
+        let body = document.body;
+        let mode = document.getElementById("mode")
+
+        function darkMode() {
+            body.classList.toggle("dark")
+        }
+         </script>
+</body>
+
+</html>

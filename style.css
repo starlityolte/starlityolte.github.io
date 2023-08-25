@@ -1,0 +1,292 @@
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.dark {
+    background-image: url(assets/img/sagitary-cst.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 50vh;
+    color: white;
+}
+
+.navbar-container {
+    background-color: #1a2238;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.logo {
+    margin-right: auto;
+    display: flex;
+    gap: 6px;
+    padding: 4px;
+}
+
+.logo-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 30%;
+    margin-left: 10px;
+}
+
+.logo-title {
+    margin-left: 8px;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+}
+
+.logo:hover {
+    color: darkorange;
+    transform: rotate(3deg);
+}
+
+.btn-cta {
+    margin-right: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 6px 12px;
+    background-color: darkorange;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.nav-bar .nav-ul {
+    display: flex;
+    padding: 20px;
+}
+
+.nav-li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.nav-li .nav-a {
+    transition: all .5s ease 0s;
+    display: inline-block;
+}
+
+.nav-li .nav-a:hover {
+    color: darkorange;
+    transform: rotate(2deg);
+ }
+
+.nav-a {
+    color: white;
+    text-decoration: none;
+}
+
+/* intro */
+
+.content-container {
+    text-align: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.intro-title {
+    margin-top: 6px;
+    margin-bottom: 8px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.intro-desc {
+    margin-bottom: 8px;
+    font-size: 34px;
+    font-weight: bolder;
+}
+
+.intro-img {
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+}
+
+.parallax {
+    background-image: url(assets/img/mountains_front.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkgray;
+    color: white;
+    padding: 25px;
+    width: 100%;
+    max-width: none;
+}
+
+.margin-t10 {
+    margin-top: 10px;
+}
+
+.contact {
+    margin-top: 10px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-item {
+    text-align: center;
+    background-color: #f7f7f7;
+    color: #000000;
+    padding: 10px;
+    width: 35%;
+    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.card-description {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 4px;
+}
+
+.card-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 6px;
+    padding: 4px;
+}
+
+footer {
+    padding: 10px;
+    height: 60px;
+    text-align: center;
+    background-color: #070b16;
+    color: white;
+}
+
+.extra-a {
+    color: crimson;
+    text-decoration: none;
+}
+
+.bio-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: crimson;
+}
+
+.dparallax {
+    background-image: url(assets/img/mountains_front.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+}
+@media screen and (max-width: 500px) {
+    .intro-title {
+        font-size: 20px;
+    }
+
+    .intro-desc {
+        font-size: 25px;
+    }
+
+    .navbar-container {
+        gap: 5px;
+    }
+
+    .logo {
+        gap: 1.5px;
+        padding: 6px;
+    }
+
+    .logo-img {
+        margin-left: 8px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo-title {
+        font-size: 23px;
+    }
+
+    .btn-cta {
+        font-size: 18.5px;
+    }
+
+    .card {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .card-item {
+        width: 100%;
+    }
+
+    .content-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-bar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #1a2238;
+        z-index: 9;
+    }
+
+    .nav-li {
+        font-size: 12px;
+    }
+
+    footer {
+        margin-bottom: 70px;
+    }
+
+    .parallax {
+        height: 170vh;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .nav-li {
+        font-size: 9px;
+    }
+}
