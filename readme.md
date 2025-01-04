@@ -1,4 +1,4 @@
-##ver 1.0.1
+## ver 1.0.1
 
 - Added new background
 - Remove wave
